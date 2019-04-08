@@ -1,0 +1,18 @@
+{% extends 'base_c.html' %}
+
+{% block title %}Course{% endblock title %}
+
+{% block content %}
+  {% for t in tutorials %}
+    <div class="card">
+      <div class="card-header">
+        &middot;<span class="font-weight-bold">
+          <a href="{% url 'tutorial_detail' t.id %}">
+            {{ t.title }}
+          </a>
+        </span> &middot;
+      </div>
+    </div>
+    <br />
+  {% endfor %}
+{% endblock content %}

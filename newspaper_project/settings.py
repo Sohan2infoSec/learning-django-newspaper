@@ -31,11 +31,11 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-		'users.apps.UsersConfig', # new
-		'pages.apps.PagesConfig', # new
-		'articles',
-		'courses.apps.CoursesConfig',
-		'crispy_forms', # new
+	'users.apps.UsersConfig', # new
+	'pages.apps.PagesConfig', # new
+    'articles',
+    'courses.apps.CoursesConfig',
+    'crispy_forms', # new
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

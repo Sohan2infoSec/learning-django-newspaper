@@ -1,0 +1,60 @@
+{% extends 'base_c.html' %}
+
+{% block content %}
+<body>
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.test {
+  position: fixed;
+    height: 10%;
+}
+
+.split {
+  height: 80%;
+  position: fixed;
+  z-index: 3;
+  top: 20;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 3%;
+  background-color: #111;
+  width: 50%;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+  width: 45%;
+}
+
+.centered {
+  position: absolute;
+  top: 25px;
+  left: 5%;
+  right: 5%
+}
+</style>
+
+<div class="split left">
+  <div class="centered">
+    <h2>{{ tutorial.title }}</h2>
+    <p>{{ tutorial.content | linebreaks }}</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h2>TTY Console (To-do - Planning)</h2>
+    <p>Some random text</p>
+  </div>
+</div>
+     
+</body>
+{% endblock content %}
